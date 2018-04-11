@@ -1,0 +1,46 @@
+http://floridaenergy.ufl.edu/
+
+THE PURPOSE OF THE REDESIGN: 
+  - the website design looks old and outdated
+  - the site isn't responsive, not mobile friendly
+  - incorporate a better content strategy
+
+STATE OF THE CURRENT SITE:
+  - Accessibility audit
+      + warning: Error excuting script "TIMEOUT"
+  - Mobile friendliness: 
+      + low optimization for mobile
+  - Performance test: 
+      + load time 4.8s; 
+      + page size 1.4 MB;
+      + Bad first byte time and cache static content
+  - Functionality: all functions are working
+  - Ease of use:
+      + inconsistent left navigation
+      + hard to find needed information
+      + nonsense color top navigation
+      + boring color choice, too many bold text
+      + wording is too tight makes it hard to read
+      + video is small, not very appeal
+      + bottom social logos are too big
+
+USER RESEARCH
+  - energy experts
+  - scientist, student
+  - people look for resources relates to energy
+
+DEVICE SUPPORT NECESSARY
+  - desktop, laptop, mobile
+
+RECOMMENDATIONS
+  - redesign the website follow user stories so that users can follow direction to find needed information
+  - make the site responsive and mobile friendly
+  - shrink the top banner
+      + logo on the left
+      + contact us, map, and search on the right as small icon
+  - discard left navigation and condense all information to be on the top navigation (Home, Who We Are, Where We Are, What We Do, Resources)
+  - create a horizonal slideshow to show case projects and ideas
+  - comes up with accurate page titles because it impact user understanding
+  - consider to use hover effects, 
+
+

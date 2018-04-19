@@ -24,17 +24,58 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+    
+    <!-- Twitter tweet button -->
+    <script>window.twttr = (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0], t = window.twttr || {};
+        if (d.getElementById(id)) return t;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js, fjs);
+        t._e = [];
+        t.ready = function(f) {
+          t._e.push(f);
+        };
+        return t;
+      }(document, "script", "twitter-wjs"));</script> 
+    <!-- End Twitter tweet button-->
+    
+    <!-- Facebook share button-->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+    <!-- End fb share button -->
+    
     <title>FESC Projects</title>
   </head>
+  
   <body>
     <h1>FESC Projects Page</h1>
     <img src="img/logo.png" alt="FESC logo">
+    
+    <!-- top navigation (Home|Education|FESC Projects) -->
+    
+    <!-- List of all funded project and other resources -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <footer>
+      <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Interested%20in%20energy%20resources%3F%20Check%20this%20out%3A%20https%3A%2F%2Fjn99.github.io%2FRedesignWebsite%2F">Tweet</a>
+      <div class="fb-share-button" data-href="https://jn99.github.io/RedesignWebsite" data-layout="button" data-size="small" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fjn99.github.io%2FRedesignWebsite&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+      <p>All Right Reserved. Florida Energy Systems Consortium.</p>
+      <p>For education purposes - UW Web Development Courses</p>
+    </footer>
+    
   </body>
+  
 </html>

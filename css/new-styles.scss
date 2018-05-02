@@ -1,0 +1,55 @@
+$darkBlue: #0e3f62;
+
+.bg-home{
+  background-image: url(../img/home.jpg);
+  background-size: cover;
+}
+
+.bg-education{
+  background-image: url(../img/education.jpg);
+  background-size: cover;
+}
+
+.bg-project{
+  background-image: url(../img/projects.jpg);
+  background-size: cover;
+}
+
+.bgText{
+  width: 80%;
+  margin: 2rem auto;
+  padding: 20px;
+  background-color: $darkBlue;
+  z-index: 10;
+  h1, h5, p, li{
+    color: white;
+  }
+}
+
+img{
+  max-height: 100%;
+  max-width: 100%;
+}
+
+footer p {
+  color: white;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

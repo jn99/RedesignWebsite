@@ -1,0 +1,30 @@
+.bg-home {
+  background-image: url(../img/home.jpg);
+  background-size: cover; }
+
+.bg-education {
+  background-image: url(../img/education.jpg);
+  background-size: cover; }
+
+.bg-project {
+  background-image: url(../img/projects.jpg);
+  background-size: cover; }
+
+.bgText {
+  width: 80%;
+  margin: 2rem auto;
+  padding: 20px;
+  background-color: #0e3f62;
+  z-index: 10; }
+  .bgText h1, .bgText h5, .bgText p, .bgText li {
+    color: white; }
+
+img {
+  max-height: 100%;
+  max-width: 100%; }
+
+footer p {
+  color: white;
+  text-align: center; }
+
+/*# sourceMappingURL=new-styles.css.map */

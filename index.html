@@ -21,66 +21,40 @@
     <meta name="twitter:card" content="summary_large_image">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/new-styles.css">
   </head>
   
-  <body>
-    <h1>FESC Home Page</h1>
-    <img src="img/logo.png" alt="FESC logo">
-    <!-- Top navbar -->
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="education.html">Education</a></li>
-        <li><a href="project.html">FESC Projects</a></li>
-      </ul>
+  <body class="bg-home">
+    <nav class="nav nav-pills nav-fill">
+      <a class="nav navbar-brand"><img src="img/logo.png" width="100" alt="logo"></a>
+      <a class="nav-item nav-link active" href="index.html">Home</a>
+      <a class="nav-item nav-link" href="education.html">Education</a>
+      <a class="nav-item nav-link" href="project.html">FESC Projects</a>
     </nav>
-    <!-- slidehow or video introduction of the page -->
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img class="d-block w-100" src="img/logo.png" alt="First slide">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="img/logo.png" alt="Second slide">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="img/logo.png" alt="Third slide">
-        </div>
-      </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
-    <!-- article tag for body text -->
-    <article>
+      
+    <!-- Introduction -->
+    <article class="bgText">
       <h1>FESC Bringing Energy Solutions to Florida, the Nation and the World</h1>
-      <p>The Florida Energy Systems Consortium (FESC) was created by the Florida State government to promote collaboration among the energy experts at its 12 supported universities to share energy-related expertise. The consortium assists the state in the development and implementation of an environmentally compatible, sustainable, and efficient energy strategic plan. The Consortium was charged to ‘perform research and development on innovative energy systems that lead to alternative energy strategies, improved energy efficiencies, and expanded economic development for the state‘. The legislature appropriated funding for research at five of the universities as well as support for education, outreach, and technology commercialization. The Consortium reports to and provides guidance on an as needed basis to the Florida Legislature, Executive Office of the Governor, and the Florida’s Office of Energy housed in the Florida Department of Agriculture and Consumer Services.</p>
-      <p>Overarching to the Consortium’s research strategy is an energy systems approach to identify innovation opportunities, prepare an energy workforce, and guide economic development.</p>
-      <p>Through collaborative research and development across the State University System and the industry, the goal of the consortium is to become a world leader in energy research, education, technology, and energy systems analysis. In so doing, the consortium shall:</p>
-      <ol type="a">
-        <li>Coordinate and initiate increased collaborative interdisciplinary energy research among the universities and the energy industry.</li>
-        <li>Assist in the creation and development of a Florida-based energy technology industry through efforts that would expedite commercialization of innovative energy technologies by taking advantage of the energy expertise within the State University System, high-technology incubators, industrial parks, and industry-driven research centers.</li>
+      <p>The Florida Energy Systems Consortium (FESC) was created by the Florida State government to promote collaboration among the energy experts at its 12 supported universities to share energy-related expertise.</p>
+      <ol type="A">
+        <li>Coordinate and initiate increased collaborative interdisciplinary energy research.</li>
+        <li>Assist in the creation and development of a Florida-based energy technology industry.</li>
         <li>Provide a state resource for objective energy systems analysis.</li>
         <li>Develop education and outreach programs to prepare a qualified energy workforce and informed public.</li>
       </ol>
     </article>
+    
+    <div class="d-flex justify-content-center">
+      <div class="p-2"><img src="img/education.jpg"></div>
+      <div class="p-2"><img src="img/projects.jpg"></div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    
+
     <footer>
       <!-- Twitter tweet button -->
       <script>window.twttr = (function(d, s, id) {
@@ -113,5 +87,4 @@
       <p>For education purposes - UW Web Development Courses</p>
     </footer>
   </body>
-  
 </html>

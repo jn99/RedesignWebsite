@@ -19,12 +19,23 @@
   .bgText h1, .bgText h5, .bgText p, .bgText li {
     color: white; }
 
+.side-section {
+  background-color: white;
+  text-align: center;
+  height: 3rem; }
+
 img {
-  max-height: 100%;
+  maxheight: 100%;
   max-width: 100%; }
 
+footer {
+  text-align: center;
+  background-color: #ac3a10; }
+
 footer p {
-  color: white;
-  text-align: center; }
+  color: white; }
+
+.twitter-share-button[style] {
+  vertical-align: middle !important; }
 
 /*# sourceMappingURL=new-styles.css.map */

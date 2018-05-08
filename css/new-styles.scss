@@ -26,15 +26,27 @@ $darkBlue: #0e3f62;
   }
 }
 
+.side-section{
+  background-color: white;
+  text-align: center;
+  height: 3rem;
+}
+
 img{
-  max-height: 100%;
+  maxheight: 100%;
   max-width: 100%;
+}
+
+footer{
+  text-align: center;
+  background-color: rgb(172, 58, 16);
 }
 
 footer p {
   color: white;
-  text-align: center;
 }
+
+.twitter-share-button[style] { vertical-align: middle!important; }
 
 
 

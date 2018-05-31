@@ -28,23 +28,24 @@
   </head>
   
   <body class="bg-home">
-    <nav class="nav nav-pills nav-fill">
-      <a class="nav navbar-brand"><img src="img/logo.png" width="100" alt="logo"></a>
-      <a class="nav-item nav-link" href="index.html">Home</a>
-      <a class="nav-item nav-link" href="education.html">Education</a>
-      <a class="nav-item nav-link" href="project.html">FESC Projects</a>
-      <a class="nav-item nav-link active" href="data.html">Data</a>
-    </nav>
-    
-    <div id="curve_chart" style=" width: 900px; height: 500px"></div>
+    <div id="app">
+      <nav class="nav nav-pills nav-fill">
+        <a class="nav navbar-brand"><img src="img/logo.png" width="100" alt="logo"></a>
+        <a class="nav-item nav-link" href="index.html">Home</a>
+        <a class="nav-item nav-link" href="education.html">Education</a>
+        <a class="nav-item nav-link" href="project.html">FESC Projects</a>
+        <a class="nav-item nav-link active" href="data.html">Data</a>
+      </nav>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <div id="curve_chart" style=" width: 900px; height: 500px"></div>
 
-    <footer>
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+      <footer>
       <!-- Twitter tweet button -->
       <script>window.twttr = (function(d, s, id) {
           var js, fjs = d.getElementsByTagName(s)[0], t = window.twttr || {};
@@ -72,8 +73,10 @@
       <!-- End fb share button -->     
       <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Interested%20in%20energy%20resources%3F%20Check%20this%20out%3A%20https%3A%2F%2Fjn99.github.io%2FRedesignWebsite%2F">Tweet</a>
       <div class="fb-share-button" data-href="https://jn99.github.io/RedesignWebsite" data-layout="button" data-size="small" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fjn99.github.io%2FRedesignWebsite&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
-      <p>All Right Reserved. Florida Energy Systems Consortium.</p>
-      <p>For education purposes - UW Web Development Courses</p>
+      <p>{{ message1 }}</p>
+      <p>{{ message2 }}</p>
     </footer>
+    <script type="text/javascript" src="script.js"></script>
+    </div>
   </body>
 </html>

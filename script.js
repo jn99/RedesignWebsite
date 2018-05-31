@@ -87,3 +87,28 @@ function drawChart() {
   var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
   chart.draw(data, options);
 }
+
+//Add Vue.js framework
+var footer = [{
+  
+}]
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    message1: 'All Right Reserved. Florida Energy Systems Consortium.',
+    message2: 'For education purposes - UW Web Development Courses'
+  }
+})
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,5 +1,6 @@
 google.charts.load('current', {'packages':['corechart']});
 google.charts.setOnLoadCallback(drawChart);
+google.charts.setOnLoadCallback(drawchart2);
 
 function drawChart() {
   var data = google.visualization.arrayToDataTable([
@@ -89,10 +90,6 @@ function drawChart() {
 }
 
 //Add Vue.js framework
-var footer = [{
-  
-}]
-
 var app = new Vue({
   el: '#app',
   data: {
@@ -101,6 +98,44 @@ var app = new Vue({
   }
 })
 
+
+//
+function drawchart2(){
+	let request = new XMLHttpRequest()
+	let requestUrl = "https://api.eia.gov/series/?api_key=aae210b5281c190a4a8d6907bf90b673&series_id=SEDS.TETCB.FL.A"
+
+	request.open('GET', requestUrl, true)
+	request.onload = function(){
+	  let theActualData = JSON.parse(request.response).series[0].data
+
+	  drawBasic(theActualData)
+	}
+	request.error = function(err){
+	  console.log("error is: ", err)
+	}
+	request.send()
+}
+
+function drawBasic(freshData) {
+	console.log("freshData", freshData)
+	freshData.unshift(["Year", "Billion BTUs"])
+
+	var data = google.visualization.arrayToDataTable(freshData);
+
+	var options = {
+		chart: {
+			title: 'Renewable Energy Production in Florida',
+			subtitle: 'Billions of BTUs per Year'
+		},
+		legend: { position: 'none' },
+		width: 600,
+		height: 400
+    };
+  
+    var chart = new google.visualization.LineChart(document.getElementById('curve_chart2'));
+    chart.draw(data, options);
+
+}
 
 
 
